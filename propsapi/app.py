@@ -1,9 +1,10 @@
+import propsapi.sources.housecanary as hc
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
-import propsapi.sources.housecanary as hc
 
 app = Flask(__name__)
 api = Api(app)
+
 
 class Props(Resource):
     def get(self):
@@ -18,6 +19,7 @@ class Props(Resource):
         else:
             return {'septic': sewer}, 200
 
+
 def is_septic(sewer):
     if sewer == 'septic':
         return 'yes'
@@ -25,5 +27,6 @@ def is_septic(sewer):
         return 'unknown'
     else:
         return 'no'
+
 
 api.add_resource(Props, '/props')

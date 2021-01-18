@@ -1,9 +1,11 @@
 import unittest
+
 import propsapi.sources.housecanary as hc
+
 
 class TestGetSewer(unittest.TestCase):
     def test_septic(self):
-        self.assertEqual(hc.get_sewer('septic'),('septic', None))
+        self.assertEqual(hc.get_sewer('septic'), ('septic', None))
 
     def test_noseptic(self):
         self.assertNotEqual(hc.get_sewer('123 fake'), ('septic', None))

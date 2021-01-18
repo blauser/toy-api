@@ -1,5 +1,6 @@
 import json
 
+
 def get_sewer(address):
     if address.find('error') > -1:
         return None, 'error in source'
@@ -7,10 +8,11 @@ def get_sewer(address):
         details = get_details(address)
         return details['sewer'], None
 
+
 def get_details(address):
     path = './propsapi/sources/'
     if address.find('null') > -1:
-        with open(path + 'null.json','r') as json_file:
+        with open(path + 'null.json', 'r') as json_file:
             response = json.load(json_file)
     elif address.find('unknown') > -1:
         with open(path + 'unknown.json', 'r') as json_file:
