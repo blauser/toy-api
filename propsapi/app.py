@@ -17,7 +17,7 @@ class Props(Resource):
         if error:
             return {'error': error}
         else:
-            return {'septic': sewer}, 200
+            return {'septic': is_septic(sewer)}, 200
 
 
 def is_septic(sewer):
