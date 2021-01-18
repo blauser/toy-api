@@ -1,8 +1,10 @@
 # Septic system API
-This API will accept an address and return `{"septic": "yes"}` if the property at the given address has a septic system, `{"septic": "no"}` if it does not, `{"septic": "unknown"}` if we cannot tell, and `{"error": error message}` on an error returned from the property information API.
+This API will accept an address and return `{"septic": "yes"}` if the property at the given address has a septic system, `{"septic": "no"}` if it does not, `{"septic": "unknown"}` if we cannot tell, and `{"error": error message}` on an error returned from the underlying property information API.
 
 ## Usage
-This is running the default local Flask server at `http://127.0.0.1:5000`, the API path is `/props`. Given this is toy API, and not connected to a live valid source of information, the type of sewer system is determined by words appearing the address string.
+Start the local server with `python -m propsapi`.
+
+This is running the default local Flask server at `http://127.0.0.1:5000`, the API endpoint is `/props`. Given this is toy API, and not connected to a live valid source of information, the type of sewer system is determined by words appearing the address string.
 - `"septic"` will yield a response of `yes`
 - `"error"` will yield an error response
 - `"unknown"` or `"null"` will yield a response of `unknown`
