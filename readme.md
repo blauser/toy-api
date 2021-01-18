@@ -29,3 +29,4 @@ There is much I would improve and expand, and I hope we can discuss it at length
   - We can add a parameter to specify a source API (e.g. `props/address=123+fake+st+90210&detail=septic&source=housecanary`).
   - We should add authentication and rate limiting before deploying an API such as this.
 - I used Flask because it was more light-weight than Django, but I know you're a Django shop. I would rewrite this in Django with extra time.
+- I would also go back to add more testing coverage and documentation.
