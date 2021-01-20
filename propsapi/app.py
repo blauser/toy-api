@@ -1,7 +1,7 @@
 """
 This is the simple API to determine if a property has a septic system.
 """
-import propsapi.sources.housecanary as hc
+import propsapi.sources.hcapi as hc
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
 

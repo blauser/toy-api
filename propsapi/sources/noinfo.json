@@ -1,0 +1,22 @@
+{
+  "address_info":{
+     "city":null,
+     "county_fips":null,
+     "geo_precision":"unknown",
+     "block_id":null,
+     "zipcode":"00000",
+     "address_full":"34813 Se Burrows Way 00000 00000",
+     "state":null,
+     "unit":null,
+     "address":"34813 Se Burrows Way 00000",
+     "lat":null,
+     "lng":null,
+     "slug":null,
+     "zipcode_plus4":null
+  },
+  "property/details":{
+     "api_code_description":"no content",
+     "api_code":204,
+     "result":null
+  }
+}
