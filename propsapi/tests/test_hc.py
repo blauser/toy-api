@@ -1,5 +1,7 @@
+"""
+Test suite for the (mocked) HouseCanary API interface.
+"""
 import unittest
-
 import propsapi.sources.hcapi as hc
 
 

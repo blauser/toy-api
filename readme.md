@@ -21,6 +21,7 @@ This is running the default local Flask server at `http://127.0.0.1:5000`, the A
 As I mentioned before, we're using Flask, so we need the following.
 - `flask`
 - `flask-restful`
+
 Also, we are using the official HouseCanary API python client.
 - `housecanary`
 
